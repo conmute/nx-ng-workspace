@@ -96,6 +96,48 @@
       "options": {
         "buildTarget": "ng-sample-app:build"
       }
+    },
+    "storybook": {
+      "executor": "@storybook/angular:start-storybook",
+      "options": {
+        "port": 4400,
+        "configDir": "apps/ng-sample-app/.storybook",
+        "browserTarget": "ng-sample-app:build",
+        "compodoc": true,
+        "compodocArgs": ["-e", "json", "-d", "apps/ng-sample-app"]
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@storybook/angular:build-storybook",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "dist/storybook/ng-sample-app",
+        "configDir": "apps/ng-sample-app/.storybook",
+        "browserTarget": "ng-sample-app:build",
+        "compodoc": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "static-storybook": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "ng-sample-app:build-storybook",
+        "staticFilePath": "dist/storybook/ng-sample-app"
+      },
+      "configurations": {
+        "ci": {
+          "buildTarget": "ng-sample-app:build-storybook:ci"
+        }
+      }
     }
   }
 }
