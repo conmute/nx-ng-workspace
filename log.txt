@@ -1,0 +1,51 @@
+
+> nx run react-native-app:run-ios
+
+info Dependencies for 'react-native-app' are up to date! No changes made.
+Auto-linking React Native module for target `ReactNativeApp`: RNSVG
+Framework build type is static library
+[Codegen] Generating ./build/generated/ios/React-Codegen.podspec.json
+Analyzing dependencies
+[Codegen] Found FBReactNativeSpec
+Downloading dependencies
+Generating Pods project
+Setting REACT_NATIVE build settings
+Setting CLANG_CXX_LANGUAGE_STANDARD to c++17 on /Users/ross/Documents/target/Learning/nx-ng-workspace/apps/react-native-app/ios/ReactNativeApp.xcodeproj
+Pod install took 38 [s] to run
+Integrating client project
+Pod installation complete! There are 60 dependencies from the Podfile and 50 total pods installed.
+Starting JS server...
+
+                        ▒▒▓▓▓▓▒▒
+                     ▒▓▓▓▒▒░░▒▒▓▓▓▒
+                  ▒▓▓▓▓░░░▒▒▒▒░░░▓▓▓▓▒
+                 ▓▓▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▓▓
+                 ▓▓░░░░░▒▓▓▓▓▓▓▒░░░░░▓▓
+                 ▓▓░░▓▓▒░░░▒▒░░░▒▓▒░░▓▓
+                 ▓▓░░▓▓▓▓▓▒▒▒▒▓▓▓▓▒░░▓▓
+                 ▓▓░░▓▓▓▓▓▓▓▓▓▓▓▓▓▒░░▓▓
+                 ▓▓▒░░▒▒▓▓▓▓▓▓▓▓▒░░░▒▓▓
+                  ▒▓▓▓▒░░░▒▓▓▒░░░▒▓▓▓▒
+                     ▒▓▓▓▒░░░░▒▓▓▓▒
+                        ▒▒▓▓▓▓▒▒
+
+
+                Welcome to Metro v0.73.10
+              Fast - Scalable - Integrated
+
+r - reload the app
+d - open developer menu
+i - run on iOS
+a - run on Android
+
+info Found Xcode workspace "ReactNativeApp.xcworkspace"
+info Found booted iPhone SE (3rd generation)
+info Launching iPhone SE (3rd generation)
+info Building (using "xcodebuild -workspace ReactNativeApp.xcworkspace -configuration Debug -scheme ReactNativeApp -destination id=55569B5F-AD26-403E-A5B2-3D38975FA6DC")
+success Successfully built the app
+info Installing "/Users/ross/Library/Developer/Xcode/DerivedData/ReactNativeApp-gvilalnqpwlsxdaktzupphqvtsna/Build/Products/Debug-iphonesimulator/ReactNativeApp.app on iPhone SE (3rd generation)"
+info Launching "org.reactjs.native.example.ReactNativeApp"
+success Successfully launched the app on the simulator
+ BUNDLE  src/main.tsx 
+
+ LOG  Running "ReactNativeApp" with {"rootTag":1,"initialProps":{}}
