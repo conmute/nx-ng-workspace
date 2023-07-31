@@ -12,9 +12,15 @@ import {
 } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
+import { defineGreetingElement, agnosticUi } from '@nx-ng-workspace/agnostic-ui';
+
+// defineGreetingElement()
+
 export const App = () => {
   const [whatsNextYCoord, setWhatsNextYCoord] = useState<number>(0);
   const scrollViewRef = useRef<null | ScrollView>(null);
+
+  alert(agnosticUi())
 
   return (
     <>

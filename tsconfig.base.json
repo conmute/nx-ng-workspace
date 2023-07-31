@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nx-ng-workspace/agnostic-ui": ["libs/agnostic-ui/src/index.ts"],
       "@nx-ng-workspace/common-ui": ["libs/common-ui/src/index.ts"],
       "@nx-ng-workspace/products": ["libs/products/src/index.ts"]
     }
